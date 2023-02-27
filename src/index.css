@@ -178,7 +178,8 @@ li a.active {
 .logoVisitor {
   width: 50px;
   display: inline;
-  padding-left: 20px;
+  margin-left: 20px;
+  border-radius: 50%;
 }
 
 .IntroDiv{
