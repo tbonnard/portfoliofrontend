@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.4567ad6d.css",
-    "main.js": "/static/js/main.c7fd2973.js",
+    "main.js": "/static/js/main.33be8983.js",
     "static/media/ecom.png": "/static/media/ecom.8a220b7ac16a1a2cdca1.png",
     "static/media/projapp.png": "/static/media/projapp.7e012fd92c9e9c335fc7.png",
     "static/media/harvard.png": "/static/media/harvard.80d1307e7e63b8b29de9.png",
+    "static/media/portfolio.png": "/static/media/portfolio.bbd2fb72fadacde52e88.png",
     "static/media/gif.png": "/static/media/gif.0ac92b58b0c2fb0f3964.png",
     "static/media/structure.jpg": "/static/media/structure.ea6316e2cb3a1d5efabb.jpg",
     "static/media/association.png": "/static/media/association.133265870b3f7b1cbc5c.png",
@@ -32,15 +33,14 @@
     "static/media/formation.png": "/static/media/formation.4083ffecc25e83a17a35.png",
     "static/media/contact.png": "/static/media/contact.73a4a44a4e8e278bbdea.png",
     "static/media/linkedin.png": "/static/media/linkedin.92380c03cc82f139a166.png",
-    "static/media/portfolio.png": "/static/media/portfolio.bbd2fb72fadacde52e88.png",
     "static/media/cloud.png": "/static/media/cloud.f296278d1e8036c2dcac.png",
     "static/media/js.png": "/static/media/js.266bd9fb2663dcc057b4.png",
     "index.html": "/index.html",
     "main.4567ad6d.css.map": "/static/css/main.4567ad6d.css.map",
-    "main.c7fd2973.js.map": "/static/js/main.c7fd2973.js.map"
+    "main.33be8983.js.map": "/static/js/main.33be8983.js.map"
   },
   "entrypoints": [
     "static/css/main.4567ad6d.css",
-    "static/js/main.c7fd2973.js"
+    "static/js/main.33be8983.js"
   ]
 }
