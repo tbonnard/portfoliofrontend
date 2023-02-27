@@ -503,7 +503,7 @@ input, textarea {
   }
 
   .error, .success {
-    height:90px;
+    height:100px;
   }
 
   #timeline {
