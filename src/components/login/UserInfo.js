@@ -13,15 +13,16 @@ const UserInfo = () => {
     const handleLogout= ()=>{
         dispatch(logoutUser())
     }
+    
 
     if (!user) {
         return null
     }
-    
+
     return (
         <div className='container'>
             <h2>Hi {user.username}!</h2>
-            <a onClick={handleLogout}>Logout</a>
+            <button onClick={handleLogout}>Logout</button>
         </div>
     )
 }

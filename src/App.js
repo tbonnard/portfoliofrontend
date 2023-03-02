@@ -23,10 +23,18 @@ import Techno from './components/techno/Techno'
 import Project from './components/project/Project'
 import Contact from './components/contact/Contact'
 
+import csrfServices from '../src/services/csrf'
+
+import {getUserInfo} from '../src/reducers/userReducer'
 
 const App = () => {
-
+  const dispatch = useDispatch()
   const user = useSelector(state => state.user)
+
+  useEffect(() => {
+    csrfServices.getCsrfToken()
+    dispatch(getUserInfo())
+  },[])
 
   return (
     <div>
