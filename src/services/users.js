@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = 'http://tbonnard.pythonanywhere.com/api/'
+const baseUrl = 'https://tbonnard.pythonanywhere.com/api/'
 
 
 // No need for the portfolio

@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = 'http://tbonnard.pythonanywhere.com/api/visitor/'
+const baseUrl = 'https://tbonnard.pythonanywhere.com/api/visitor/'
 
 const getVisitorDetails = async (id) => {
   const userToken = document.cookie.replace(/(?:(?:^|.*;\s*)jwtTk\s*=\s*([^;]*).*$)|^.*$/, '$1');
