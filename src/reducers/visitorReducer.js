@@ -3,11 +3,11 @@ import visitorServices from '../services/visitor'
 import { setNotification } from './notifReducer'
 
 
-export const getVisitor = (id) =>{
+export const getVisitor = (object) =>{
     return async dispatch => {
-        if (id) {
+        if (object.internal_id) {
             try {
-                const visitor = await visitorServices.getVisitorDetails(id)
+                const visitor = await visitorServices.getVisitorDetails(object)
                 dispatch({
                     type: "GET_VISITOR",
                     data: visitor

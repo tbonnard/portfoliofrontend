@@ -35,7 +35,8 @@ const Intro = () => {
 
 
     useEffect(() => {
-        dispatch(getVisitor(paramLocal))
+        const object = {"internal_id":paramLocal}
+        dispatch(getVisitor(object))
     }, [dispatch, paramLocal])
 
 
