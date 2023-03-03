@@ -15,7 +15,7 @@ const VisitorForm = () => {
 
     const handleNewVisitor = (e) => {
         e.preventDefault()
-        dispatch(createVisitor({internal_id:parseInt(internal_id), name, description, logo}))
+        dispatch(createVisitor({internal_id, name, description, logo}))
         setInternal_id('')
         setName('')
         setDescription('')
