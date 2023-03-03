@@ -42,7 +42,7 @@ const Project = () => {
                         <div className="tech_icons">
                             <img src={react} alt="ReactJS" title="ReactJS"/>
                             <img src={django} alt="django" title="django"/>
-                            <a href="https://github.com/tbonnard/portfolio" target="_blank">
+                            <a href="https://github.com/tbonnard/portfoliofrontend" target="_blank">
                                 <img className="github_portf" src={github} alt="Github" title="Github"/>
                             </a>
                         </div>
