@@ -31,7 +31,7 @@ const Intro = () => {
             setParamLocal(param)
         }
         history.push("/")
-    }, [history, param])
+    }, [param])
 
 
     useEffect(() => {
