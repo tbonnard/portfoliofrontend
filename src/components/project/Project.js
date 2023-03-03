@@ -40,6 +40,7 @@ const Project = () => {
                     <div className="projectItemBottom">
                         <p>Portfolio</p>
                         <div className="tech_icons">
+                            <img src={js} alt="js" title="js"/>
                             <img src={react} alt="ReactJS" title="ReactJS"/>
                             <img src={django} alt="django" title="django"/>
                             <a href="https://github.com/tbonnard/portfoliofrontend" target="_blank">
