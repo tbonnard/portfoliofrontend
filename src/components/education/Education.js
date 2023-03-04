@@ -50,10 +50,10 @@ const Education = () => {
                     </div>
 
                     <div className="educationItem educationItemTop">
-                        <img src={structure} title='structure' alt='structure'/>
-                        <a href="https://runestone.academy/ns/books/published/pythonds/index.html" target='_blank'>
+                    <img src={udemy} title='udemy' alt='udemy'/>
+                        <a href="https://www.udemy.com/" target='_blank'>
                         <div className="middle">
-                            <div className="textMiddle">Data Structure and Algorithm</div>
+                            <div className="textMiddle">Udemy Python / JS</div>
                         </div>
                         </a>
                     </div>
@@ -61,10 +61,10 @@ const Education = () => {
 
                 <div className="educationItemsBottom">
                     <div className="educationItem educationItemBottom">
-                        <img src={udemy} title='udemy' alt='udemy'/>
-                        <a href="https://www.udemy.com/" target='_blank'>
+                        <img src={structure} title='structure' alt='structure'/>
+                        <a href="https://runestone.academy/ns/books/published/pythonds/index.html" target='_blank'>
                         <div className="middle">
-                            <div className="textMiddle">Udemy Python / JS</div>
+                            <div className="textMiddle">Data Structure and Algorithm</div>
                         </div>
                         </a>
                     </div>
