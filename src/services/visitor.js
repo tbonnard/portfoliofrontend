@@ -33,13 +33,16 @@ const createVisitor = async (object) => {
 const getAllVisitors = async () => {
     const csrftoken = document.cookie.replace(/(?:(?:^|.*;\s*)csrftoken\s*=\s*([^;]*).*$)|^.*$/, '$1');
     const userToken = document.cookie.replace(/(?:(?:^|.*;\s*)jwtTk\s*=\s*([^;]*).*$)|^.*$/, '$1');
-    const response = await axios.get(`${baseUrl}visitor/`,  {
-      headers: {
-        Authorization: `Bearer ${userToken}`,
-        'X-CSRFToken': csrftoken,
-        'Content-Type': 'application/json',
-      }})
-    return response.data
+    if (userToken) {
+      const response = await axios.get(`${baseUrl}visitor/`,  {
+        headers: {
+          Authorization: `Bearer ${userToken}`,
+          'X-CSRFToken': csrftoken,
+          'Content-Type': 'application/json',
+        }})
+      return response.data
+    }
+    return null
 }
 
 

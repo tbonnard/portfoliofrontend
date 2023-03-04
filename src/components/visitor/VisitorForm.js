@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 
 import { createVisitor } from '../../reducers/visitorReducer'
+import { getAllVisitors } from '../../reducers/visitorsAllReducer'
 
 const VisitorForm = () => {
     
@@ -20,6 +21,7 @@ const VisitorForm = () => {
         setName('')
         setDescription('')
         setLogo('')
+        dispatch(getAllVisitors())
     }
 
     return (
