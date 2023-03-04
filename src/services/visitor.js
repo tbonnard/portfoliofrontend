@@ -29,6 +29,19 @@ const createVisitor = async (object) => {
     return response.data
 }
 
+const editVisitor = async (object) => {
+  axios.defaults.withCredentials = true;
+  const userToken = document.cookie.replace(/(?:(?:^|.*;\s*)jwtTk\s*=\s*([^;]*).*$)|^.*$/, '$1');
+  const csrftoken = document.cookie.replace(/(?:(?:^|.*;\s*)csrftoken\s*=\s*([^;]*).*$)|^.*$/, '$1');
+  const response = await axios.put(`${baseUrl}getvisitor/`, object,
+  {
+    headers: {
+      Authorization: `Bearer ${userToken}`,
+      'X-CSRFToken': csrftoken,
+      'Content-Type': 'application/json',
+    }})
+  return response.data
+}
 
 const getAllVisitors = async () => {
     const csrftoken = document.cookie.replace(/(?:(?:^|.*;\s*)csrftoken\s*=\s*([^;]*).*$)|^.*$/, '$1');
@@ -46,5 +59,5 @@ const getAllVisitors = async () => {
 }
 
 
-const exportedObject = { getVisitorDetails, createVisitor, getAllVisitors }
+const exportedObject = { getVisitorDetails, createVisitor, getAllVisitors, editVisitor }
 export default exportedObject

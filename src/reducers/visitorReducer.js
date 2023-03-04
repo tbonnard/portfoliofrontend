@@ -32,12 +32,26 @@ export const createVisitor = (object) => {
     }
 }
 
+export const editVisitor = (object) => {
+    return async dispatch => {
+        const visitor = await visitorServices.editVisitor(object)
+        dispatch({
+            type: "EDIT_VISITOR",
+            data: visitor
+        })
+    }
+}
+
+
+
 
 const visitorReducer = (state=null, action) => {
     switch(action.type) {
         case 'GET_VISITOR':
             return action.data
         case 'CREATE_VISITOR':
+            return action.data
+        case 'EDIT_VISITOR':
             return action.data
         default:
             return state

@@ -1,6 +1,7 @@
 import axios from 'axios'
 
 const baseUrl = 'https://tbonnard.pythonanywhere.com/api/'
+// const baseUrl = 'http://127.0.0.1:8000/api/'
 
 const loginUser = async credentials => {
     const csrftoken = document.cookie.replace(/(?:(?:^|.*;\s*)csrftoken\s*=\s*([^;]*).*$)|^.*$/, '$1');
