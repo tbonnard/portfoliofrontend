@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { Link } from "react-router-dom"
 
 import { createVisitor, editVisitor } from '../../reducers/visitorReducer'
 import { getAllVisitors } from '../../reducers/visitorsAllReducer'
@@ -65,6 +66,8 @@ const VisitorForm = () => {
                     <img className="logoCopyVisitor" src={clear} onClick={handleClear}/>
                 </div>
             </form>
+            <Link className='' to="/signin">Signin</Link>
+            <Link className='' to="/">Home</Link>
         </div>
     )
 

@@ -22,7 +22,9 @@ const UserInfo = () => {
     return (
         <div className='container'>
             <h2>Hi {user.username}!</h2>
-            <button onClick={handleLogout}>Logout</button>
+            <button onClick={handleLogout}>Logout</button> 
+            <Link className='' to="/visitor">Visitor</Link>
+            <Link className='' to="/">Home</Link>
         </div>
     )
 }
