@@ -170,6 +170,8 @@ li a.active {
 }
 
 
+
+
 /* VISITOR - INTRO */
 .nameDivVisitor{
   display: flex;
@@ -212,6 +214,16 @@ li a.active {
   width: 20px;
   margin-left: 20px;
   cursor: pointer;
+}
+
+.divLinksVisitor{
+  width: 300px;
+  margin: 30px auto 0 auto;
+}
+
+.divLinksVisitorLinks{
+  margin: 0 10px;
+
 }
 
 

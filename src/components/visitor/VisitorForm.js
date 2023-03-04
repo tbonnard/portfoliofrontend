@@ -61,13 +61,16 @@ const VisitorForm = () => {
                 <input type="text" placeholder='description' value={description} onChange={(e) => setDescription(e.target.value)}/>
                 <input type="url" placeholder='logo url' value={logo} onChange={(e) => setLogo(e.target.value)}/>
                 <div className=''>
-                    {visitorEdit && <button type='submit'>Edit</button>}
-                    {!visitorEdit && <button type='submit'>Add</button>}
+                    {visitorEdit && <button className="submit_button" type='submit'>Edit</button>}
+                    {!visitorEdit && <button className="submit_button" type='submit'>Add</button>}
                     <img className="logoCopyVisitor" src={clear} onClick={handleClear}/>
                 </div>
             </form>
-            <Link className='' to="/signin">Signin</Link>
-            <Link className='' to="/">Home</Link>
+            <div className='divLinksVisitor'>
+                <Link className='divLinksVisitorLinks' to="/signin">Signin</Link>
+                <Link className='divLinksVisitorLinks' to="/">Home</Link>
+            </div>
+
         </div>
     )
 

@@ -22,10 +22,12 @@ const UserInfo = () => {
     return (
         <div className='container'>
             <h2>Hi {user.username}!</h2>
-            <button onClick={handleLogout}>Logout</button> 
-            <Link className='' to="/visitor">Visitor</Link>
-            <Link className='' to="/">Home</Link>
-        </div>
+            <button className="submit_button" onClick={handleLogout}>Logout</button> 
+            <div className='divLinksVisitor'>
+                <Link className='divLinksVisitorLinks' to="/visitor">Visitor</Link>
+                <Link className='divLinksVisitorLinks' to="/">Home</Link>
+            </div>
+       </div>
     )
 }
 
