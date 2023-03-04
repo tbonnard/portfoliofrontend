@@ -6,12 +6,15 @@ import userReducer from './reducers/userReducer'
 import notifReducer from './reducers/notifReducer'
 import weatherReducer from './reducers/weatherReducer'
 import visitorReducer from './reducers/visitorReducer'
+import visitorsAllReducer from './reducers/visitorsAllReducer'
+
 
 const appReducer = combineReducers({
   user: userReducer,
   notif: notifReducer,
   weather:weatherReducer,
-  visitor:visitorReducer
+  visitor:visitorReducer,
+  visitors:visitorsAllReducer
 })
 
 const rootReducer = (state, action) => {

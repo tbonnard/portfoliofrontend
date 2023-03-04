@@ -33,7 +33,7 @@ const Project = () => {
                         <a href="#">
                         <img src={portfolio} alt='portfolio' title='portfolio'/>
                         <div className="middle">
-                            <div className="textMiddle">Portfolio listant quelques projets personnels et leur github</div>
+                            <div className="textMiddle">Portfolio avec gestion backend des visiteurs listant quelques projets personnels et leur github</div>
                         </div>
                         </a>
                     </div>

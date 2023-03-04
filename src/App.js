@@ -22,6 +22,8 @@ import VisitorForm from "./components/visitor/VisitorForm"
 import Techno from './components/techno/Techno'
 import Project from './components/project/Project'
 import Contact from './components/contact/Contact'
+import VisitorDetails from './components/visitor/VisitorDetails'
+
 
 import csrfServices from '../src/services/csrf'
 
@@ -34,7 +36,7 @@ const App = () => {
   useEffect(() => {
     csrfServices.getCsrfToken()
     dispatch(getUserInfo())
-  },[])
+  },[dispatch])
 
   return (
     <div>
@@ -60,6 +62,7 @@ const App = () => {
 
           <Route path='/visitor'>
             <VisitorForm />
+            <VisitorDetails />
           </Route>
 
           <Route path='/' >
