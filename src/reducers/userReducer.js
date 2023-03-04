@@ -10,7 +10,6 @@ export const userLogin = (credentials) => {
         try {
             const user = await userServices.loginUser(credentials)
             document.cookie = `jwtTk=${user.jwt}; Path=/ ; samesite=Lax`
-            console.log(user.user)
             localStorage.setItem('userPortfolio', JSON.stringify(user.user))
             dispatch({
                     type: "USER_LOGIN",

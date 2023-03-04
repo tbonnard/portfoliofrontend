@@ -4,6 +4,7 @@ import { useLocation, useHistory } from "react-router-dom"
 
 
 import {getVisitor} from "../../reducers/visitorReducer"
+
 import IntroGeneral from "./IntroGeneral"
 
 

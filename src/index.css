@@ -207,6 +207,12 @@ li a.active {
   margin: 30px 0;
 }
 
+.logoCopyVisitor{
+  width: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
 
 
 
