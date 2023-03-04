@@ -41,10 +41,10 @@ const Education = () => {
 
 
                     <div className="educationItem educationItemTop">
-                        <img src={udemy} title='udemy' alt='udemy'/>
-                        <a href="https://www.udemy.com/" target='_blank'>
+                        <img src={freecodecamp} title='freecodecamp' alt='freecodecamp'/>
+                        <a href="https://www.freecodecamp.org/learn" target='_blank'>
                         <div className="middle">
-                            <div className="textMiddle">Udemy Python / JS</div>
+                            <div className="textMiddle">FreeCodeCamp</div>
                         </div>
                         </a>
                     </div>
@@ -61,10 +61,10 @@ const Education = () => {
 
                 <div className="educationItemsBottom">
                     <div className="educationItem educationItemBottom">
-                        <img src={freecodecamp} title='freecodecamp' alt='freecodecamp'/>
-                        <a href="https://www.freecodecamp.org/learn" target='_blank'>
+                        <img src={udemy} title='udemy' alt='udemy'/>
+                        <a href="https://www.udemy.com/" target='_blank'>
                         <div className="middle">
-                            <div className="textMiddle">FreeCodeCamp</div>
+                            <div className="textMiddle">Udemy Python / JS</div>
                         </div>
                         </a>
                     </div>
