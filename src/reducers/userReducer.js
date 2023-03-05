@@ -47,8 +47,11 @@ export const getUserInfo = () =>{
     return async dispatch => {
         let userDetails = null
         if (localStorage.getItem('userPortfolio')) {
+            if (document.cookie.replace(/(?:(?:^|.*;\s*)jwtTk\s*=\s*([^;]*).*$)|^.*$/, '$1')) {
                 userDetails = localStorage.getItem('userPortfolio')
-            }
+            } else {
+                localStorage.removeItem("userPortfolio")
+            } }
         dispatch({
             type: "GET_USER_INFO",
             data: JSON.parse(userDetails)
