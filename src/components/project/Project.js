@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+
+import Modal from "../navigation/Modal";
 
 import association from '../../files/project/association.png'
 import gif from '../../files/project/gif.png'
@@ -20,22 +22,27 @@ import db from '../../files/techno/db.png'
 import github from '../../files/techno/github.png'
 import flask from '../../files/techno/flask.png'
 
+import more from '../../files/more.png'
+
 
 const Project = () => {
     
+    const [item, setItem] = useState(null)
+
     return (
         <div id='portfolio' className="container">
+            <Modal item={item} stateChanger={setItem} />
             <h2 className="titreSection">Projets</h2>
             <div className="projectGlobal">
 
                 <div className="projectItem">
                     <div className="projectItemTop" style={{backgroundColor: "rgb(247, 255, 211)"}}>
-                        <a href="#">
                         <img src={portfolio} alt='portfolio' title='portfolio'/>
-                        <div className="middle">
-                            <div className="textMiddle">Portfolio avec gestion backend des visiteurs listant quelques projets personnels et leur github</div>
+                        <div className="middle" onClick={() => setItem("portfolio")}>
+                            <div className="textMiddle">Portfolio avec gestion backend des visiteurs listant quelques projets personnels et leur github
+                                <img className="moreIcon" src={more} alt='more' title='more'/>
+                            </div>
                         </div>
-                        </a>
                     </div>
                     <div className="projectItemBottom">
                         <p>Portfolio</p>
@@ -53,12 +60,12 @@ const Project = () => {
 
                 <div className="projectItem">
                     <div className="projectItemTop" style={{backgroundColor: "#eaf7f6"}}>
-                        <a href="https://projapp.onrender.com/" target="_blank">
                         <img src={projapp} alt='projapp' title='projapp'/>
-                        <div className="middle">
-                            <div className="textMiddle">Outils de suivi de projets (to do, notes, daily, meetings) et création de profils (ex, pour freelancers)</div>
+                        <div className="middle" onClick={() => setItem("projapp")}>
+                            <div className="textMiddle">Outils de suivi de projets (to do, notes, daily, meetings) et création de profils (ex, pour freelancers)
+                                <img className="moreIcon" src={more} alt='more' title='more'/>
+                            </div>
                         </div>
-                        </a>
                     </div>
                     <div className="projectItemBottom">
                         <p>Suivi de gestion de projets</p>
@@ -75,12 +82,12 @@ const Project = () => {
 
                 <div className="projectItem">
                     <div className="projectItemTop" style={{backgroundColor: "#c7e9fd"}}>
-                        <a href="https://playgif.onrender.com/" target="_blank">
                         <img src={gif} alt='gif' title='gif'/>
-                        <div className="middle">
-                            <div className="textMiddle">Application permettant de voter pour les meilleurs gifs et de se créer un "hall of fame" de gif</div>
+                        <div className="middle" onClick={() => setItem("gif")}>
+                            <div className="textMiddle">Application permettant de voter pour les meilleurs gifs et de se créer un "hall of fame" de gif
+                                <img className="moreIcon" src={more} alt='more' title='more'/>
+                            </div>
                         </div>
-                        </a>
                     </div>
                     <div className="projectItemBottom">
                         <p>Gif Fame</p>
@@ -97,12 +104,12 @@ const Project = () => {
 
                 <div className="projectItem">
                     <div className="projectItemTop" style={{backgroundColor: "#f7f7f7"}}>
-                        <a href="https://association.pythonanywhere.com/" target="_blank">
-                        <img src={association} alt='ecom' title='ecom'/>
-                        <div className="middle">
-                            <div className="textMiddle">Gestion des bénévoles, des présences et des communications entre l'association et les bénévoles</div>
+                        <img src={association} alt='association' title='association'/>
+                        <div className="middle" onClick={() => setItem("association")}>
+                            <div className="textMiddle">Gestion des bénévoles, des présences et des communications entre l'association et les bénévoles
+                                <img className="moreIcon" src={more} alt='more' title='more'/>
+                            </div>
                         </div>
-                        </a>
                     </div>
                     <div className="projectItemBottom">
                         <p>Gestion associative</p>
@@ -119,12 +126,12 @@ const Project = () => {
 
                 <div className="projectItem">
                     <div className="projectItemTop" style={{backgroundColor: "#fe436e"}}>
-                        <a href="https://ecomplatform.pythonanywhere.com"  target="_blank">
-                        <img src={ecom} alt='association' title='association'/>
-                        <div className="middle">
-                            <div className="textMiddle">e-com listant les produits de sa plateforme Admin et intégrer à StripeAPI pour le paiement</div>
+                        <img src={ecom} alt='ecom' title='ecom'/>
+                        <div className="middle" onClick={() => setItem("ecom")}>
+                            <div className="textMiddle">e-com listant les produits de sa plateforme Admin et intégrer à StripeAPI pour le paiement
+                                <img className="moreIcon" src={more} alt='more' title='more'/>
+                            </div>
                         </div>
-                        </a>
                     </div>
                     <div className="projectItemBottom">
                         <p>e-commerce</p>
@@ -141,12 +148,12 @@ const Project = () => {
 
                 <div className="projectItem">
                     <div className="projectItemTop" style={{backgroundColor: "#3f87bd"}}>
-                        <a href="https://ecomplatform.pythonanywhere.com/admin" target="_blank">
                         <img src={admin_inventory} alt='admin_inventory' title='admin_inventory'/>
-                        <div className="middle">
-                            <div className="textMiddle">Plateforme Admin du site e-com permettant de gérer les produits, les achats et les transactions</div>
+                        <div className="middle" onClick={() => setItem("adminecom")}>
+                            <div className="textMiddle">Plateforme Admin du site e-com permettant de gérer les produits, les achats et les transactions
+                                <img className="moreIcon" src={more} alt='more' title='more'/>
+                            </div>
                         </div>
-                        </a>
                     </div>
                     <div className="projectItemBottom">
                         <p>Admin inventaire</p>
