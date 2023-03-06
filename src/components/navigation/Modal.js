@@ -6,15 +6,13 @@ import close from '../../files/close.png'
 const Modal = ({item, stateChanger}) => {
 
 
-    const portfolio = ["- Appel vers l'API de météo par géolocalisation", "- Listes d'éléments", "- Gestion des visiteurs", "- CRU des visiteurs", "- Token d'authentification pour la gestion des visiteurs"]
-    const projapp = ['- CRUD des To Dos, Notes, éléments de meetings', "- Recherche et filtres", "- Vue Kanban", "- Gestion des items par profil", "- Création de Notes depuis les To Dos et inversement", "- Création de compte"]
-    const gif = ["- Appels vers l'API pour afficher les Gifs", "- Filtres par catégorie", "- Vote par gif", "- Création de compte", "- Leaderboard"]
-    const association = ["- Création de comptes", "- 3 Roles (Admin, Gestionnaire de site et utilisateur)", "- CRUD de soirées de distribution", "- Ajout de bénéboles aux soirées afin de gérer la soirée", "- Gestion des bénévoles", "- Message aux bénévoles"]
+    const portfolio = ["- Token d'authentification pour la gestion des visiteurs", "- Appel vers l'API de météo par géolocalisation", "- Listes d'éléments", "- Gestion des visiteurs", "- CRU des visiteurs"]
+    const projapp = ["- Sélection et création de profils",'- CRUD des To Dos, Notes, éléments de meetings', "- Recherche et filtres", "- Vue Kanban", "- Création de Notes depuis les To Dos et inversement", "- Création de compte"]
+    const gif = ["- Appels vers l'API pour afficher les Gifs", "- Vote par gif", "- Filtres par catégorie", "- Création de compte", "- Leaderboard"]
+    const association = [ "- gestion des 3 Roles (Admin, Gestionnaire de site et utilisateur)",  "- Message aux bénévoles", "- CRUD de soirées de distribution", "- Ajout de bénéboles aux soirées afin de gérer la soirée", "- Gestion des bénévoles", "- Création de comptes"]
     const ecom = ["- Appels vers l'API Stripe pour la gestion du paiement (carte de crédit de test)", "- Création de comptes", "- Gestion du panier"] 
     const adminecom = ["- Suivi des transactions et des ordres", "- CRUD de produits et des catégories", "- Voir les paniers non finalisés des utilisateurs"]
 
-
-    
     const hrefItem = {
         "portfolio" : "https://tbonnard.onrender.com/",
         "projapp" : "https://projapp.onrender.com/",
