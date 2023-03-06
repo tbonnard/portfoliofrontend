@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7d5a72d0.css",
-    "main.js": "/static/js/main.dc51f11b.js",
+    "main.js": "/static/js/main.dde089c9.js",
     "static/media/ecom.png": "/static/media/ecom.8a220b7ac16a1a2cdca1.png",
     "static/media/projapp.png": "/static/media/projapp.7e012fd92c9e9c335fc7.png",
     "static/media/harvard.png": "/static/media/harvard.80d1307e7e63b8b29de9.png",
@@ -16,7 +16,6 @@
     "static/media/avatar.svg": "/static/media/avatar.8c4a16d87946c35735a44a6cbbcad5ef.svg",
     "static/media/fullstackopen.png": "/static/media/fullstackopen.2dabd5eae44ee50151b6.png",
     "static/media/flask.png": "/static/media/flask.1d18708b215b33729612.png",
-    "static/media/more.png": "/static/media/more.94ed74042a16f92e661f.png",
     "static/media/snow.png": "/static/media/snow.9957456da0445490c376.png",
     "static/media/close.png": "/static/media/close.a296344eb362b90b3b82.png",
     "static/media/node.png": "/static/media/node.007e99f68b718e476aba.png",
@@ -35,14 +34,15 @@
     "static/media/formation.png": "/static/media/formation.4083ffecc25e83a17a35.png",
     "static/media/contact.png": "/static/media/contact.73a4a44a4e8e278bbdea.png",
     "static/media/linkedin.png": "/static/media/linkedin.92380c03cc82f139a166.png",
+    "static/media/more.png": "/static/media/more.fc0dd78b8925e4040279.png",
     "static/media/cloud.png": "/static/media/cloud.f296278d1e8036c2dcac.png",
     "static/media/js.png": "/static/media/js.266bd9fb2663dcc057b4.png",
     "index.html": "/index.html",
     "main.7d5a72d0.css.map": "/static/css/main.7d5a72d0.css.map",
-    "main.dc51f11b.js.map": "/static/js/main.dc51f11b.js.map"
+    "main.dde089c9.js.map": "/static/js/main.dde089c9.js.map"
   },
   "entrypoints": [
     "static/css/main.7d5a72d0.css",
-    "static/js/main.dc51f11b.js"
+    "static/js/main.dde089c9.js"
   ]
 }
