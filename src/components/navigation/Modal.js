@@ -6,7 +6,7 @@ import close from '../../files/close.png'
 const Modal = ({item, stateChanger}) => {
 
 
-    const portfolio = ["- Listes d'éléments", "- Gestion des visiteurs", "- CRU des visiteurs", "- Token d'authentification pour la gestion des visiteurs"]
+    const portfolio = ["- Appel vers l'API de météo par géolocalisation", "- Listes d'éléments", "- Gestion des visiteurs", "- CRU des visiteurs", "- Token d'authentification pour la gestion des visiteurs"]
     const projapp = ['- CRUD des To Dos, Notes, éléments de meetings', "- Recherche et filtres", "- Vue Kanban", "- Gestion des items par profil", "- Création de Notes depuis les To Dos et inversement", "- Création de compte"]
     const gif = ["- Appels vers l'API pour afficher les Gifs", "- Filtres par catégorie", "- Vote par gif", "- Création de compte", "- Leaderboard"]
     const association = ["- Création de comptes", "- 3 Roles (Admin, Gestionnaire de site et utilisateur)", "- CRUD de soirées de distribution", "- Ajout de bénéboles aux soirées afin de gérer la soirée", "- Gestion des bénévoles", "- Message aux bénévoles"]
