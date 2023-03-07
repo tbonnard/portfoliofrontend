@@ -478,6 +478,7 @@ position: relative;
 .textinfo{
   font-size: 12px;
   font-style: italic;
+  padding: 5px 0 0px 0;
 }
 
 .closeIcon{
@@ -539,6 +540,7 @@ input, textarea {
   margin-left: 10px;
   cursor:pointer;
   border: none;
+  font-size: 16px;
 }
 
 .submit_button:hover{

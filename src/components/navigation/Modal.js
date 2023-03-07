@@ -63,10 +63,12 @@ const Modal = ({item, stateChanger}) => {
                </div>
                <div className="modalLink" >
                 <a href={hrefFinal} target="_blank">
-                        lien vers le site démo
+                        <button className="submit_button">
+                            voir le site démo
+                        </button>
                     </a>
                </div>
-                <p className="textinfo">site peut être long à charger</p>
+                <p className="textinfo">le site pourrait être long à charger</p>
             </div>
 
         </div>
