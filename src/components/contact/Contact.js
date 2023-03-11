@@ -42,7 +42,7 @@ const Contact = () => {
             <div className="contactContainer">      
                 <div className="textContact">
                     <h2 className='textContactTitre'>Me contacter</h2>
-                    <p>Si vous souhaitez en connaitre d'avantage sur mon pacours, n'hésitez pas à me contacter par l'un des moyens suivants !</p>
+                    <p>Si vous souhaitez en connaitre d'avantage sur mon parcours, n'hésitez pas à me contacter par l'un des moyens suivants !</p>
                     <div className='textContactIcons'>
                         <a href="https://www.linkedin.com/in/thibaudbonnard/" target="_blank"><img className="icon_contact" src={linkedin} title='LinkedIn' alt='LinkedIn'/></a>
                         <a href="https://github.com/tbonnard" target="_blank"><img className="icon_contact" src={github} title='GitHub' alt='GitHub'/></a>
