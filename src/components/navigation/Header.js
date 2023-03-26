@@ -18,8 +18,8 @@ const Header = () => {
             </div>
             <div className="menu">
                 <li className="navItemIconContainer"><a href="#techno"><img className="navItemIcon" src={techno} title='Technologies' alt='Technologies'/></a></li>
-                <li className="navItemIconContainer"><a href="#formation"><img className="navItemIcon" src={formation} title='Formation' alt='Formation'/></a></li>
                 <li className="navItemIconContainer"><a href="#portfolio"><img className="navItemIcon" src={portfolio} title='Portfolio' alt='Portfolio'/></a></li>
+                <li className="navItemIconContainer"><a href="#formation"><img className="navItemIcon" src={formation} title='Formation' alt='Formation'/></a></li>
                 <li className="navItemIconContainer"><a href="#contact"><img className="navItemIcon" src={contact} title='contact' alt='contact'/></a></li>
                 {/* <li className="navItemIconContainer"><a href="https://github.com/tbonnard" target="_blank" style={{backgroundColor: "black"}}><img className="navItemIcon" src={github} title='github' alt='github'/></a></li> */}
             </div>

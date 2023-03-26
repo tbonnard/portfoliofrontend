@@ -68,8 +68,8 @@ const App = () => {
           <Route path='/' >
             <Intro />
             <Techno />
-            <Education />
             <Project />
+            <Education />
             <Contact />
           </Route>
 
