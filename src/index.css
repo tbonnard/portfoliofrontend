@@ -190,7 +190,7 @@ li a.active {
 
 .IntroDiv{
   text-align: left;
-  padding: 6% 10%;
+  padding: 6% 10% 4% 10%;
 }
 
 .introText{
@@ -496,6 +496,7 @@ position: relative;
 .contactContainerGlobal{
   padding: 4% 2%;
   background-color: var(--light_blue);
+  margin: 4% 0 0 0;
 }
 
 .contactContainer{
