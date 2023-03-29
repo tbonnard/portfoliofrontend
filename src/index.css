@@ -37,6 +37,10 @@ body {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
+ul{
+  list-style-type: none;
+}
+
 
 .container {
   padding: 6% 10%;
@@ -86,7 +90,8 @@ p{
 
 
 /* NAVIGATION - ITEMS MENU */
-ul {
+/* ul { */
+.ulNav{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -574,14 +579,34 @@ input, textarea {
     width: 70%;
   }
 
-  ul {
+  /* ul { */
+    .ulNav{
     width: 100%;
     height: auto;
     padding-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
     flex-direction: row;
     border-bottom: 1px solid var(--medium);
     border-right: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--default);
+    position: fixed;
+    overflow: auto;
+    z-index: 2;
   }
+
+  ul{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    border-right: none;
+  }
+
+
 
   li a {
     padding: 8px 8px 4px 8px;
