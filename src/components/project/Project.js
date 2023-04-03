@@ -57,8 +57,29 @@ const Project = () => {
                     </div>
                 </div>
 
-
-                {/* <div className="projectItem">
+                <div className="projectItem">
+                    <div className="projectItemTop" style={{backgroundColor: "#c7e9fd"}}>
+                        <img src={gif} alt='gif' title='gif'/>
+                        <div className="middle" onClick={() => setItem("gif")}>
+                            <div className="textMiddle">Application permettant de voter pour les meilleurs gifs et de se créer un "hall of fame" de gif
+                                <img className="moreIcon" src={more} alt='more' title='more'/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="projectItemBottom">
+                        <p>Gif Fame</p>
+                        <div className="tech_icons">
+                            <img src={js} alt="js" title="js"/>
+                            <img src={react} alt="ReactJS" title="ReactJS"/>
+                            <img src={node} alt="Node.js" title="Node.js"/>
+                            <a href="https://github.com/tbonnard/gif_vote" target="_blank">
+                                <img className="github_portf" src={github} alt="Github" title="Github"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div className="projectItem">
                     <div className="projectItemTop" style={{backgroundColor: "#eaf7f6"}}>
                         <img src={projapp} alt='projapp' title='projapp'/>
                         <div className="middle" onClick={() => setItem("projapp")}>
@@ -78,7 +99,7 @@ const Project = () => {
                             </a>
                         </div>
                     </div>
-                </div> */}
+                </div>
 
                 <div className="projectItem">
                     <div className="projectItemTop" style={{backgroundColor: "#f7f7f7"}}>
@@ -102,27 +123,6 @@ const Project = () => {
                     </div>
                 </div>
                 
-                <div className="projectItem">
-                    <div className="projectItemTop" style={{backgroundColor: "#c7e9fd"}}>
-                        <img src={gif} alt='gif' title='gif'/>
-                        <div className="middle" onClick={() => setItem("gif")}>
-                            <div className="textMiddle">Application permettant de voter pour les meilleurs gifs et de se créer un "hall of fame" de gif
-                                <img className="moreIcon" src={more} alt='more' title='more'/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="projectItemBottom">
-                        <p>Gif Fame</p>
-                        <div className="tech_icons">
-                            <img src={js} alt="js" title="js"/>
-                            <img src={react} alt="ReactJS" title="ReactJS"/>
-                            <img src={node} alt="Node.js" title="Node.js"/>
-                            <a href="https://github.com/tbonnard/gif_vote" target="_blank">
-                                <img className="github_portf" src={github} alt="Github" title="Github"/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
 
                 <div className="projectItem">
                     <div className="projectItemTop" style={{backgroundColor: "#fe436e"}}>
