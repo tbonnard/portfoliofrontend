@@ -58,7 +58,7 @@ const Project = () => {
                 </div>
 
 
-                <div className="projectItem">
+                {/* <div className="projectItem">
                     <div className="projectItemTop" style={{backgroundColor: "#eaf7f6"}}>
                         <img src={projapp} alt='projapp' title='projapp'/>
                         <div className="middle" onClick={() => setItem("projapp")}>
@@ -78,7 +78,7 @@ const Project = () => {
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="projectItem">
                     <div className="projectItemTop" style={{backgroundColor: "#f7f7f7"}}>
