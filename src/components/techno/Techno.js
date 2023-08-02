@@ -27,6 +27,7 @@ const Techno = () => {
                     {/* <img className="technoItem" src={db} alt='SQL MongoDb' title='SQL MongdoDb' style={{backgroundColor: "#47a5e6"}}/> */}
                     {/* <img className="technoItem" src={node} alt='nodeJS' title='nodeJS' style={{backgroundColor: "#282b23"}}/>*/}  
                     <img className="technoItem" src={git} alt='git' title='git' style={{backgroundColor: "#f9c5aa"}}/>
+                
                 </div>
         </div>
 
