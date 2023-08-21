@@ -8,7 +8,7 @@ import ecom from '../../files/project/ecom.png'
 import admin_inventory from '../../files/project/admin_inventory.png'
 import projapp from '../../files/project/projapp.png'
 import portfolio from '../../files/project/portfolio.png'
-
+import scanningapp from '../../files/project/scanningapp.png'
 
 import js from '../../files/techno/js.png'
 import python from '../../files/techno/python.png'
@@ -34,6 +34,50 @@ const Project = () => {
             <Modal item={item} stateChanger={setItem} />
             <h2 className="titreSection">Projets</h2>
             <div className="projectGlobal">
+
+            <div className="projectItem">
+                    <div className="projectItemTop" style={{backgroundColor: "rgb(247, 255, 211)"}}>
+                        <img src={scanningapp} alt='scanningapp' title='scanningapp'/>
+                        <div className="middle" onClick={() => setItem("scanningapp")}>
+                            <div className="textMiddle">Importer une photo de plaque d'immatriculation et laisser un message
+                                <img className="moreIcon" src={more} alt='more' title='more'/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="projectItemBottom">
+                        <p>Scanning App</p>
+                        <div className="tech_icons">
+                            <img src={js} alt="js" title="js"/>
+                            <img src={react} alt="ReactJS" title="ReactJS"/>
+                            <img src={django} alt="django" title="django"/>
+                            <a href="https://github.com/tbonnard/scanningBackend" target="_blank">
+                                <img className="github_portf" src={github} alt="Github" title="Github"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            <div className="projectItem">
+                    <div className="projectItemTop" style={{backgroundColor: "rgb(247, 255, 211)"}}>
+                        <img src={portfolio} alt='portfolio' title='portfolio'/>
+                        <div className="middle" onClick={() => setItem("portfolio")}>
+                            <div className="textMiddle">Portfolio avec gestion backend des visiteurs listant quelques projets personnels et leur github
+                                <img className="moreIcon" src={more} alt='more' title='more'/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="projectItemBottom">
+                        <p>Portfolio</p>
+                        <div className="tech_icons">
+                            <img src={js} alt="js" title="js"/>
+                            <img src={react} alt="ReactJS" title="ReactJS"/>
+                            <img src={django} alt="django" title="django"/>
+                            <a href="https://github.com/tbonnard/portfoliofrontend" target="_blank">
+                                <img className="github_portf" src={github} alt="Github" title="Github"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
                 <div className="projectItem">
                     <div className="projectItemTop" style={{backgroundColor: "rgb(247, 255, 211)"}}>
