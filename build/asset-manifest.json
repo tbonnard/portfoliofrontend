@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.8717c8cf.css",
-    "main.js": "/static/js/main.a7864561.js",
+    "main.js": "/static/js/main.6e77ae09.js",
     "static/media/ecom.png": "/static/media/ecom.8a220b7ac16a1a2cdca1.png",
     "static/media/projapp.png": "/static/media/projapp.7e012fd92c9e9c335fc7.png",
     "static/media/harvard.png": "/static/media/harvard.80d1307e7e63b8b29de9.png",
     "static/media/portfolio.png": "/static/media/portfolio.bbd2fb72fadacde52e88.png",
     "static/media/gif.png": "/static/media/gif.0ac92b58b0c2fb0f3964.png",
     "static/media/structure.jpg": "/static/media/structure.ea6316e2cb3a1d5efabb.jpg",
+    "static/media/scanningapp.png": "/static/media/scanningapp.c916db1ccc90cf2f4c44.png",
     "static/media/association.png": "/static/media/association.133265870b3f7b1cbc5c.png",
     "static/media/cs50python.jpg": "/static/media/cs50python.6b004b1d59b7f91ab215.jpg",
     "static/media/react.png": "/static/media/react.f589332dd7ddee5cfbff.png",
@@ -41,10 +42,10 @@
     "static/media/js.png": "/static/media/js.266bd9fb2663dcc057b4.png",
     "index.html": "/index.html",
     "main.8717c8cf.css.map": "/static/css/main.8717c8cf.css.map",
-    "main.a7864561.js.map": "/static/js/main.a7864561.js.map"
+    "main.6e77ae09.js.map": "/static/js/main.6e77ae09.js.map"
   },
   "entrypoints": [
     "static/css/main.8717c8cf.css",
-    "static/js/main.a7864561.js"
+    "static/js/main.6e77ae09.js"
   ]
 }

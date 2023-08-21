@@ -36,7 +36,7 @@ const Project = () => {
             <div className="projectGlobal">
 
             <div className="projectItem">
-                    <div className="projectItemTop" style={{backgroundColor: "rgb(247, 255, 211)"}}>
+                    <div className="projectItemTop" style={{backgroundColor: "rgb(137, 202, 142)"}}>
                         <img src={scanningapp} alt='scanningapp' title='scanningapp'/>
                         <div className="middle" onClick={() => setItem("scanningapp")}>
                             <div className="textMiddle">Importer une photo de plaque d'immatriculation et laisser un message
@@ -51,28 +51,6 @@ const Project = () => {
                             <img src={react} alt="ReactJS" title="ReactJS"/>
                             <img src={django} alt="django" title="django"/>
                             <a href="https://github.com/tbonnard/scanningBackend" target="_blank">
-                                <img className="github_portf" src={github} alt="Github" title="Github"/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            <div className="projectItem">
-                    <div className="projectItemTop" style={{backgroundColor: "rgb(247, 255, 211)"}}>
-                        <img src={portfolio} alt='portfolio' title='portfolio'/>
-                        <div className="middle" onClick={() => setItem("portfolio")}>
-                            <div className="textMiddle">Portfolio avec gestion backend des visiteurs listant quelques projets personnels et leur github
-                                <img className="moreIcon" src={more} alt='more' title='more'/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="projectItemBottom">
-                        <p>Portfolio</p>
-                        <div className="tech_icons">
-                            <img src={js} alt="js" title="js"/>
-                            <img src={react} alt="ReactJS" title="ReactJS"/>
-                            <img src={django} alt="django" title="django"/>
-                            <a href="https://github.com/tbonnard/portfoliofrontend" target="_blank">
                                 <img className="github_portf" src={github} alt="Github" title="Github"/>
                             </a>
                         </div>

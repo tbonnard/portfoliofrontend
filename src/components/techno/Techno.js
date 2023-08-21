@@ -21,7 +21,7 @@ const Techno = () => {
                     {/* <img className="technoItem" src={csharp} alt='csharp' title='C#' style={{backgroundColor: "#f9c5aa"}}/> */}
                     <img className="technoItem" src={python} alt='Python' title='Python' />
                     <img className="technoItem" src={html_css} alt='HTLM_CSS' title='HTLM CSS' style={{backgroundColor: "#282b23"}}/>
-                    <img className="technoItem" src={react} alt='React' title='React' style={{backgroundColor: "#9ed544"}}/>
+                    <img className="technoItem" src={react} alt='React' title='React' style={{backgroundColor: "rgb(192, 221, 143)"}}/>
                     <img className="technoItem" src={django} alt='Django Framework' title='Django Framework' style={{backgroundColor: "#47a5e6"}}/>
                     {/* <img className="technoItem" src={rest} alt='Rest API' title='Rest API' style={{backgroundColor: "#f9c5aa"}}/> */}
                     {/* <img className="technoItem" src={db} alt='SQL MongoDb' title='SQL MongdoDb' style={{backgroundColor: "#47a5e6"}}/> */}

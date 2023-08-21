@@ -12,6 +12,7 @@ const Modal = ({item, stateChanger}) => {
     const association = [ "- gestion des 3 Roles (Admin, Gestionnaire de site et utilisateur)",  "- Message aux bénévoles", "- CRUD de soirées de distribution", "- Ajout de bénéboles aux soirées afin de gérer la soirée", "- Gestion des bénévoles", "- Création de comptes"]
     const ecom = ["- Appels vers l'API Stripe pour la gestion du paiement (carte de crédit de test)", "- Création de comptes", "- Gestion du panier"] 
     const adminecom = ["- Suivi des transactions et des ordres", "- CRUD de produits et des catégories", "- Voir les paniers non finalisés des utilisateurs"]
+    const scanningapp = ["- Import de photo", "- AI qui détecte les textes", "- Envoyer un message (ex, voiture garé devant son parking)", "- AI qui analyse le texte et évite les propos inappropriés", "- Se mettre comme Follower du numéro de la proprété", "- Recevoir un email pour chaque nouveau message de numéro que l'on suit"]
 
     const hrefItem = {
         "portfolio" : "https://tbonnard.onrender.com/",
@@ -19,7 +20,8 @@ const Modal = ({item, stateChanger}) => {
         "gif" : "https://playgif.onrender.com/",
         "association" : "https://association.pythonanywhere.com/",
         "ecom" : "https://ecomplatform.pythonanywhere.com",
-        "adminecom" : "https://ecomplatform.pythonanywhere.com/admin"
+        "adminecom" : "https://ecomplatform.pythonanywhere.com/admin",
+        "scanningapp": "https://scanningapp.onrender.com/"
     }
 
     const [hrefFinal, setHrefFinal] = useState()
@@ -36,7 +38,9 @@ const Modal = ({item, stateChanger}) => {
         } else if (item==="ecom") {
             setHrefFinal(hrefItem.ecom)
         } else if (item==="adminecom") {
-            setHrefFinal(hrefItem.adminecom)
+            setHrefFinal(hrefItem.adminecom) 
+        } else if (item==="scanningapp") {
+                setHrefFinal(hrefItem.scanningapp)
         } else {
             setHrefFinal(hrefItem.portfolio)
         }
@@ -60,6 +64,7 @@ const Modal = ({item, stateChanger}) => {
                     {item == "association" && association.map((item, index) => <p key={index} className="modalTextText">{item}</p>)}
                     {item == "ecom" && ecom.map((item, index) => <p key={index} className="modalTextText">{item}</p>)}
                     {item == "adminecom" && adminecom.map((item, index) => <p key={index} className="modalTextText">{item}</p>)}
+                    {item == "scanningapp" && scanningapp.map((item, index) => <p key={index} className="modalTextText">{item}</p>)}
                </div>
                <div className="modalLink" >
                 <a href={hrefFinal} target="_blank">
