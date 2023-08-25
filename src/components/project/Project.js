@@ -82,7 +82,7 @@ const Project = () => {
                 </div>
 
             <div className="projectItem">
-                    <div className="projectItemTop" style={{backgroundColor: "rgb(137, 202, 142)"}}>
+                    <div className="projectItemTop" style={{backgroundColor: "rgb(242, 220, 226)"}}>
                         <img src={scanningapp} alt='scanningapp' title='scanningapp'/>
                         <div className="middle" onClick={() => setItem("scanningapp")}>
                             <div className="textMiddle">Importer une photo de plaque d'immatriculation et laisser un message
