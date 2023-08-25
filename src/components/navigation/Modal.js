@@ -29,23 +29,34 @@ const Modal = ({item, stateChanger}) => {
     const [hrefFinal, setHrefFinal] = useState()
 
     useEffect(() => {
-        if (item==="portfolio") {
-            setHrefFinal(hrefItem.portfolio)
-        } else if (item==="projapp") {
-            setHrefFinal(hrefItem.projapp)
-        } else if (item==="gif") {
-            setHrefFinal(hrefItem.gif)
-        } else if (item==="association") {
-            setHrefFinal(hrefItem.association)
-        } else if (item==="ecom") {
-            setHrefFinal(hrefItem.ecom)
-        } else if (item==="adminecom") {
-            setHrefFinal(hrefItem.adminecom) 
-        } else if (item==="scanningapp") {
+        switch (item) {
+            case "portfolio":
+                setHrefFinal(hrefItem.portfolio)
+                break
+            case "projapp":
+                setHrefFinal(hrefItem.projapp)
+                break
+            case "gif":
+                setHrefFinal(hrefItem.gif)
+                break
+            case "association":
+                setHrefFinal(hrefItem.association)
+                break
+            case "ecom":
+                setHrefFinal(hrefItem.ecom)
+                break
+            case "adminecom":
+                setHrefFinal(hrefItem.adminecom)
+                break
+            case "scanningapp":
                 setHrefFinal(hrefItem.scanningapp)
-        } else {
-            setHrefFinal(hrefItem.portfolio)
-        }
+                break
+            case "mapproject":
+                setHrefFinal(hrefItem.mapproject)
+                break    
+            default:
+                setHrefFinal(hrefItem.portfolio)        
+            }
     }, [item])
 
     if (!item) {
