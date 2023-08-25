@@ -13,6 +13,7 @@ const Modal = ({item, stateChanger}) => {
     const ecom = ["- Appels vers l'API Stripe pour la gestion du paiement (carte de crédit de test)", "- Création de comptes", "- Gestion du panier"] 
     const adminecom = ["- Suivi des transactions et des ordres", "- CRUD de produits et des catégories", "- Voir les paniers non finalisés des utilisateurs"]
     const scanningapp = ["- Import de photo", "- AI qui détecte les textes", "- Envoyer un message (ex, voiture garé devant son parking)", "- AI qui analyse le texte et évite les propos inappropriés", "- Se mettre comme Follower du numéro de la proprété", "- Recevoir un email pour chaque nouveau message de numéro que l'on suit"]
+    const mapproject = ["- Rechercher des lieux", "- Proposer des améliorations et suggestions", "- Voter pour les projets des lieux", "- Ajouter vos favoris", "- Se créer un compte"]
 
     const hrefItem = {
         "portfolio" : "https://tbonnard.onrender.com/",
@@ -21,7 +22,8 @@ const Modal = ({item, stateChanger}) => {
         "association" : "https://association.pythonanywhere.com/",
         "ecom" : "https://ecomplatform.pythonanywhere.com",
         "adminecom" : "https://ecomplatform.pythonanywhere.com/admin",
-        "scanningapp": "https://scanningapp.onrender.com/"
+        "scanningapp": "https://scanningapp.onrender.com/",
+        "mapproject": "https://plagest.onrender.com/"
     }
 
     const [hrefFinal, setHrefFinal] = useState()
@@ -65,6 +67,7 @@ const Modal = ({item, stateChanger}) => {
                     {item == "ecom" && ecom.map((item, index) => <p key={index} className="modalTextText">{item}</p>)}
                     {item == "adminecom" && adminecom.map((item, index) => <p key={index} className="modalTextText">{item}</p>)}
                     {item == "scanningapp" && scanningapp.map((item, index) => <p key={index} className="modalTextText">{item}</p>)}
+                    {item == "mapproject" && mapproject.map((item, index) => <p key={index} className="modalTextText">{item}</p>)}
                </div>
                <div className="modalLink" >
                 <a href={hrefFinal} target="_blank">
