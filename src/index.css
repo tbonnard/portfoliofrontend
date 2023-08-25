@@ -400,6 +400,19 @@ position: relative;
   width: 400px;
   height:400px;
   margin: 0 10px;
+  position: relative;
+}
+
+.tagProject{
+position: absolute;
+width: 60px;
+background-color: #ffc874;
+right: 10px;
+top: 10px;
+z-index: 1000;
+font-size: 12px;
+border-radius: 5px;
+padding: 5px 10px;
 }
 
 .projectItemTop {

@@ -38,6 +38,7 @@ const Project = () => {
             <div className="projectGlobal">
 
             <div className="projectItem">
+                <div className="tagProject">en cours</div>
                     <div className="projectItemTop" style={{backgroundColor: "rgb(137, 202, 142)"}}>
                         <img src={mapproject} alt='mapproject' title='mapproject'/>
                         <div className="middle" onClick={() => setItem("mapproject")}>
