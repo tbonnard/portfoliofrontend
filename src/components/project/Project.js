@@ -37,8 +37,8 @@ const Project = () => {
             <h2 className="titreSection">Projets</h2>
             <div className="projectGlobal">
 
-            <div className="projectItem">
-                <div className="tagProject">en cours</div>
+            <div className="projectItem"> 
+                {/* <div className="tagProject">en cours</div> */}
                     <div className="projectItemTop" style={{backgroundColor: "rgb(137, 202, 142)"}}>
                         <img src={mapproject} alt='mapproject' title='mapproject'/>
                         <div className="middle" onClick={() => setItem("mapproject")}>
@@ -60,27 +60,6 @@ const Project = () => {
                     </div>
                 </div>
 
-                <div className="projectItem">
-                    <div className="projectItemTop" style={{backgroundColor: "rgb(247, 255, 211)"}}>
-                        <img src={portfolio} alt='portfolio' title='portfolio'/>
-                        <div className="middle" onClick={() => setItem("portfolio")}>
-                            <div className="textMiddle">Portfolio avec gestion backend des visiteurs listant quelques projets personnels et leur github
-                                <img className="moreIcon" src={more} alt='more' title='more'/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="projectItemBottom">
-                        <p>Portfolio</p>
-                        <div className="tech_icons">
-                            <img src={js} alt="js" title="js"/>
-                            <img src={react} alt="ReactJS" title="ReactJS"/>
-                            <img src={django} alt="django" title="django"/>
-                            <a href="https://github.com/tbonnard/portfoliofrontend" target="_blank">
-                                <img className="github_portf" src={github} alt="Github" title="Github"/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
 
             <div className="projectItem">
                     <div className="projectItemTop" style={{backgroundColor: "rgb(242, 220, 226)"}}>
@@ -104,6 +83,28 @@ const Project = () => {
                     </div>
                 </div>
 
+
+                <div className="projectItem">
+                    <div className="projectItemTop" style={{backgroundColor: "rgb(247, 255, 211)"}}>
+                        <img src={portfolio} alt='portfolio' title='portfolio'/>
+                        <div className="middle" onClick={() => setItem("portfolio")}>
+                            <div className="textMiddle">Portfolio avec gestion backend des visiteurs listant quelques projets personnels et leur github
+                                <img className="moreIcon" src={more} alt='more' title='more'/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="projectItemBottom">
+                        <p>Portfolio</p>
+                        <div className="tech_icons">
+                            <img src={js} alt="js" title="js"/>
+                            <img src={react} alt="ReactJS" title="ReactJS"/>
+                            <img src={django} alt="django" title="django"/>
+                            <a href="https://github.com/tbonnard/portfoliofrontend" target="_blank">
+                                <img className="github_portf" src={github} alt="Github" title="Github"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
                 <div className="projectItem">
                     <div className="projectItemTop" style={{backgroundColor: "#c7e9fd"}}>
